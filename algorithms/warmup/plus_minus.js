@@ -1,3 +1,16 @@
+/**
+ * Plus Minus
+ * https://www.hackerrank.com/challenges/plus-minus/problem
+ * Algorithms > Warmup | Easy
+ *
+ * Task: given an array of integers, print the ratios of positive,
+ * negative and zero elements, one per line.
+ *
+ * Approach: three helper functions, each counting the matching elements
+ * in a pass and dividing by the array length.
+ * Complexity: O(n)
+ */
+
 'use strict';
 
 process.stdin.resume();

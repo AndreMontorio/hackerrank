@@ -1,5 +1,13 @@
-// Link problem
-// https://www.hackerrank.com/challenges/solve-me-first/problem?isFullScreen=true
+/**
+ * Solve Me First
+ * https://www.hackerrank.com/challenges/solve-me-first/problem
+ * Algorithms > Warmup | Easy
+ *
+ * Task: read two integers and print their sum.
+ *
+ * Approach: return a + b.
+ * Complexity: O(1)
+ */
 
 process.stdin.resume();
 process.stdin.setEncoding('ascii');

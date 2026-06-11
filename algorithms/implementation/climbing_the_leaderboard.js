@@ -1,3 +1,18 @@
+/**
+ * Climbing the Leaderboard
+ * https://www.hackerrank.com/challenges/climbing-the-leaderboard/problem
+ * Algorithms > Implementation | Medium
+ *
+ * Task: the leaderboard uses dense ranking (ties share a rank); for
+ * each of the player's scores (given in ascending order), print the
+ * rank the player would occupy.
+ *
+ * Approach: deduplicate the scores with a Set to get the dense ranking,
+ * then walk a single pointer from the bottom of the board upward as the
+ * player's scores increase (two-pointer); the rank is pointer + 2.
+ * Complexity: O(n + m)
+ */
+
 'use strict';
 
 const fs = require('fs');
@@ -36,15 +51,15 @@ function climbingLeaderboard(ranked, player) {
 
     let result = [];
 
-    let ponteiro = newRank.length - 1;
+    let pointer = newRank.length - 1;
 
     for(let i = 0; i < player.length; i++) {
 
-        while(ponteiro >= 0 && player[i] >= newRank[ponteiro]) {
-            ponteiro--;
+        while(pointer >= 0 && player[i] >= newRank[pointer]) {
+            pointer--;
         }
 
-        result.push(ponteiro + 2);
+        result.push(pointer + 2);
 
     }
 
@@ -68,9 +83,3 @@ function main() {
 
     ws.end();
 }
-
-
-climbingLeaderboard([100, 90, 90, 80, 75, 60], [50, 65, 77, 90, 102]);
-
-
-//6, 5, 4, 2, 1

@@ -1,3 +1,15 @@
+/**
+ * Staircase
+ * https://www.hackerrank.com/challenges/staircase/problem
+ * Algorithms > Warmup | Easy
+ *
+ * Task: print a right-aligned staircase of '#' characters of height n.
+ *
+ * Approach: for each row i, print (n - i) spaces followed by i hashes
+ * using String.repeat.
+ * Complexity: O(n^2) characters printed
+ */
+
 'use strict';
 
 process.stdin.resume();

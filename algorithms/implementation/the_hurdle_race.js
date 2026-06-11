@@ -1,3 +1,17 @@
+/**
+ * The Hurdle Race
+ * https://www.hackerrank.com/challenges/the-hurdle-race/problem
+ * Algorithms > Implementation | Easy
+ *
+ * Task: a runner can jump k units high; given the hurdle heights, print
+ * how many doses of a potion (each adds 1 to the jump height) are
+ * needed to clear the tallest hurdle.
+ *
+ * Approach: sort the heights descending; if k is below the tallest
+ * hurdle return the difference, otherwise 0.
+ * Complexity: O(n log n)
+ */
+
 'use strict';
 
 const fs = require('fs');

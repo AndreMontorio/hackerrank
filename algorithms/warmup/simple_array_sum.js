@@ -1,5 +1,14 @@
-// Link problem
-// https://www.hackerrank.com/challenges/simple-array-sum/problem?isFullScreen=true
+/**
+ * Simple Array Sum
+ * https://www.hackerrank.com/challenges/simple-array-sum/problem
+ * Algorithms > Warmup | Easy
+ *
+ * Task: given an array of integers, print the sum of its elements.
+ *
+ * Approach: reduce the array with an add function, starting from 0
+ * so an empty array still returns 0.
+ * Complexity: O(n)
+ */
 
 'use strict';
 

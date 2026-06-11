@@ -1,42 +1,94 @@
-# 💻 HackerRank Solutions Repository
+# 💻 HackerRank Solutions
 
-Bem-vindo ao repositório **HackerRank Solutions**! Este repositório é dedicado às minhas soluções para os desafios de programação oferecidos pelo [HackerRank](https://www.hackerrank.com), uma plataforma que ajuda desenvolvedores a melhorar suas habilidades através de problemas práticos e competitivos em várias linguagens de programação.
+My solutions to programming challenges from [HackerRank](https://www.hackerrank.com), a platform that helps developers sharpen their skills through hands-on, competitive problems across many programming languages.
 
-## 🖥️ Sobre o HackerRank
+## 🎯 Purpose
 
-[HackerRank](https://www.hackerrank.com) é uma plataforma amplamente utilizada por desenvolvedores para aprender e praticar programação. Com desafios que abrangem desde algoritmos básicos até tópicos avançados de ciência da computação, o HackerRank oferece um ambiente interativo onde programadores podem se testar e se preparar para entrevistas técnicas.
+This repository documents my progress on HackerRank: exploring different approaches to problems, recording the reasoning behind each solution, and sharing working examples with other developers.
 
-## 🎯 Objetivo do Repositório
+## 🛠 Repository Structure
 
-Este repositório foi criado para compartilhar minhas soluções para os desafios do HackerRank. A ideia é documentar meu progresso, explorar diferentes abordagens para resolver problemas e fornecer exemplos de soluções para outros desenvolvedores que possam se beneficiar delas.
+Solutions are organized mirroring HackerRank's own taxonomy: **domain → subdomain → problem**. The difficulty of each problem is recorded in the index below.
 
-## 🛠 Estrutura do Repositório
+```
+hackerrank/
+├── algorithms/
+│   ├── warmup/
+│   │   └── <problem>.js
+│   └── implementation/
+│       └── <problem>.js
+└── README.md
+```
 
-As soluções estão organizadas em diretórios de acordo com a categoria e o nível de dificuldade dos desafios. Cada diretório contém:
+As new domains are tackled (Data Structures, SQL, Mathematics, Regex, ...), new folders will follow the same pattern, e.g. `data-structures/arrays/`, `sql/basic-select/`.
 
-- **README.md:** Uma descrição do desafio e a abordagem utilizada para resolvê-lo.
-- **Código-fonte:** Arquivos contendo a solução em uma ou mais linguagens de programação.
-- **Testes:** (Se aplicável) Arquivos de teste utilizados para validar a solução.
+### Conventions
 
-## 🚀 Como Contribuir
+- File names use `snake_case`, matching the challenge name (e.g. `angry_professor.js`).
+- The file extension indicates the solution language (`.js`, `.py`, `.sql`, ...).
+- Every solution file starts with a standard header describing the problem and the approach:
 
-Se você quiser contribuir com novas soluções, otimizações ou melhorias nas soluções existentes, fique à vontade para fazer um fork do repositório e abrir um pull request.
+```js
+/**
+ * <Problem Name>
+ * <link to the challenge on HackerRank>
+ * <Domain> > <Subdomain> | <Difficulty>
+ *
+ * Task: <short summary of what the challenge asks, in my own words>
+ *
+ * Approach: <how the solution works>
+ * Complexity: <time complexity>
+ */
+```
 
-1. Faça um fork deste repositório.
-2. Crie um branch para a sua feature (`git checkout -b feature/nova-solucao`).
-3. Adicione suas mudanças (`git add .`).
-4. Commit suas mudanças (`git commit -m 'Adicionei uma nova solução para [desafio]'`).
-5. Faça o push para o branch (`git push origin feature/nova-solucao`).
-6. Abra um pull request.
+- Every new solution gets a row in the index below.
 
-## 📄 Licença
+## 📚 Solutions Index
 
-Este projeto está licenciado sob a licença MIT - veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+### Algorithms / Warmup
 
-## 🙌 Agradecimentos
+| Challenge | Difficulty | Solution |
+| --- | --- | --- |
+| [Solve Me First](https://www.hackerrank.com/challenges/solve-me-first/problem) | Easy | [JavaScript](algorithms/warmup/solve_me_first.js) |
+| [Simple Array Sum](https://www.hackerrank.com/challenges/simple-array-sum/problem) | Easy | [JavaScript](algorithms/warmup/simple_array_sum.js) |
+| [Compare the Triplets](https://www.hackerrank.com/challenges/compare-the-triplets/problem) | Easy | [JavaScript](algorithms/warmup/compare_the_triplets.js) |
+| [A Very Big Sum](https://www.hackerrank.com/challenges/a-very-big-sum/problem) | Easy | [JavaScript](algorithms/warmup/very_big_sum.js) |
+| [Diagonal Difference](https://www.hackerrank.com/challenges/diagonal-difference/problem) | Easy | [JavaScript](algorithms/warmup/diagonal_difference.js) |
+| [Plus Minus](https://www.hackerrank.com/challenges/plus-minus/problem) | Easy | [JavaScript](algorithms/warmup/plus_minus.js) |
+| [Staircase](https://www.hackerrank.com/challenges/staircase/problem) | Easy | [JavaScript](algorithms/warmup/staircase.js) |
+| [Birthday Cake Candles](https://www.hackerrank.com/challenges/birthday-cake-candles/problem) | Easy | [JavaScript](algorithms/warmup/birthday_cake_candles.js) |
 
-Agradeço ao [HackerRank](https://www.hackerrank.com) por oferecer uma plataforma tão abrangente e desafiadora para a comunidade de desenvolvedores. Também agradeço a todos que contribuíram ou virão a contribuir para este repositório.
+### Algorithms / Implementation
+
+| Challenge | Difficulty | Solution |
+| --- | --- | --- |
+| [Number Line Jumps](https://www.hackerrank.com/challenges/kangaroo/problem) | Easy | [JavaScript](algorithms/implementation/number_line_jumps.js) |
+| [Between Two Sets](https://www.hackerrank.com/challenges/between-two-sets/problem) | Easy | [JavaScript](algorithms/implementation/between_two_sets.js) |
+| [Designer PDF Viewer](https://www.hackerrank.com/challenges/designer-pdf-viewer/problem) | Easy | [JavaScript](algorithms/implementation/designer_pdf_viewer.js) |
+| [The Hurdle Race](https://www.hackerrank.com/challenges/the-hurdle-race/problem) | Easy | [JavaScript](algorithms/implementation/the_hurdle_race.js) |
+| [Angry Professor](https://www.hackerrank.com/challenges/angry-professor/problem) | Easy | [JavaScript](algorithms/implementation/angry_professor.js) |
+| [Utopian Tree](https://www.hackerrank.com/challenges/utopian-tree/problem) | Easy | [JavaScript](algorithms/implementation/utopian_tree.js) |
+| [Climbing the Leaderboard](https://www.hackerrank.com/challenges/climbing-the-leaderboard/problem) | Medium | [JavaScript](algorithms/implementation/climbing_the_leaderboard.js) |
+
+## 🚀 Contributing
+
+If you'd like to contribute new solutions, optimizations or improvements to existing ones, feel free to fork the repository and open a pull request.
+
+1. Fork this repository.
+2. Create a branch for your change (`git checkout -b feature/new-solution`).
+3. Add the solution under the matching domain/subdomain folder, with the standard header, and update the index in this README.
+4. Commit your changes (`git commit -m 'Add solution for [challenge]'`).
+5. Push the branch (`git push origin feature/new-solution`).
+6. Open a pull request.
+
+## 📄 License
+
+This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
+
+## 🙌 Acknowledgements
+
+Thanks to [HackerRank](https://www.hackerrank.com) for providing such a comprehensive and challenging platform for the developer community, and to everyone who has contributed or will contribute to this repository.
 
 ---
 
-Aprenda, resolva desafios, e prepare-se para suas próximas aventuras em programação!
+Learn, solve challenges, and get ready for your next adventures in programming!

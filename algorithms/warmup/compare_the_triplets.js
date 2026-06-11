@@ -1,6 +1,15 @@
-// Link Problem
-// https://www.hackerrank.com/challenges/compare-the-triplets/problem?isFullScreen=true
-
+/**
+ * Compare the Triplets
+ * https://www.hackerrank.com/challenges/compare-the-triplets/problem
+ * Algorithms > Warmup | Easy
+ *
+ * Task: Alice and Bob each rate a challenge on three categories; whoever
+ * rated higher in a category earns a point. Print both totals.
+ *
+ * Approach: single pass comparing a[i] vs b[i], incrementing each
+ * player's score accordingly.
+ * Complexity: O(n)
+ */
 
 'use strict';
 
@@ -45,8 +54,6 @@ function compareTriplets(a, b) {
         else if (a[i] < b[i])
             bobPoint += 1;
     }
-    
-    console.log([alicePoint, bobPoint]);
     
     return [alicePoint, bobPoint];
 }

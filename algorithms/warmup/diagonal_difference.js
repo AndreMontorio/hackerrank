@@ -1,5 +1,16 @@
-// link problem
-// https://www.hackerrank.com/challenges/diagonal-difference/problem?isFullScreen=true
+/**
+ * Diagonal Difference
+ * https://www.hackerrank.com/challenges/diagonal-difference/problem
+ * Algorithms > Warmup | Easy
+ *
+ * Task: given a square matrix, print the absolute difference between
+ * the sums of its two diagonals.
+ *
+ * Approach: one loop sums the primary diagonal (arr[i][i]), a second
+ * loop sums the secondary diagonal (arr[i][n - 1 - i]); return the
+ * absolute difference.
+ * Complexity: O(n)
+ */
 
 'use strict';
 
@@ -33,17 +44,16 @@ function readLine() {
  */
 
 function diagonalDifference(arr) {
-    let tamanhoMatriz = arr.length;
-    let diferenca = 0;
+    let matrixSize = arr.length;
     let diagonal1 = 0;
     let diagonal2 = 0;
     
-    for(let i = 0; i < tamanhoMatriz; i++) {
+    for(let i = 0; i < matrixSize; i++) {
         diagonal1 += arr[i][i];
     }
 
-    for(let x = (tamanhoMatriz - 1); x >= 0; x--) {
-        diagonal2 += arr[x][(tamanhoMatriz - 1) - x];
+    for(let x = (matrixSize - 1); x >= 0; x--) {
+        diagonal2 += arr[x][(matrixSize - 1) - x];
     }
     return Math.abs(diagonal1 - diagonal2);
 }
@@ -67,8 +77,9 @@ function main() {
 }
 
 
-// Apos entrega, pesquisei formas melhores de fazer
-// Acredito que a forma abaixo seja a maneira mais correta.
+// After submitting, I researched better ways to solve it.
+// I believe the version below is the cleanest approach:
+// both diagonals can be summed in a single pass.
 
 // function diagonalDifference(arr) {
 //     let primaryDiagonalSum = 0;

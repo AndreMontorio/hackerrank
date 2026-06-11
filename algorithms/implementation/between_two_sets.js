@@ -1,3 +1,18 @@
+/**
+ * Between Two Sets
+ * https://www.hackerrank.com/challenges/between-two-sets/problem
+ * Algorithms > Implementation | Easy
+ *
+ * Task: count the integers x that are multiples of every element of
+ * array a and divisors of every element of array b.
+ *
+ * Approach: generate the multiples of each element of a up to b[0],
+ * keep the deduplicated ones divisible by every element of a, then
+ * keep those that divide every element of b and return the count.
+ * Complexity: O(k * (n + m)), where k is the number of candidate
+ * multiples up to b[0]
+ */
+
 'use strict';
 
 const fs = require('fs');
@@ -65,7 +80,6 @@ function getTotalX(a, b) {
         }
     });
     
-    console.log(arr1Div);
     return arr1Div.length;
 }
 
@@ -88,5 +102,3 @@ function main() {
 
     ws.end();
 }
-
-getTotalX([3, 9, 6], [36, 72]);

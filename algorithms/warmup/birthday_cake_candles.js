@@ -1,3 +1,15 @@
+/**
+ * Birthday Cake Candles
+ * https://www.hackerrank.com/challenges/birthday-cake-candles/problem
+ * Algorithms > Warmup | Easy
+ *
+ * Task: count how many candles have the tallest height.
+ *
+ * Approach: find the maximum with Math.max(...candles), then count
+ * its occurrences.
+ * Complexity: O(n)
+ */
+
 'use strict';
 
 const fs = require('fs');

@@ -1,3 +1,18 @@
+/**
+ * Designer PDF Viewer
+ * https://www.hackerrank.com/challenges/designer-pdf-viewer/problem
+ * Algorithms > Implementation | Easy
+ *
+ * Task: each lowercase letter has a height; compute the area of the
+ * highlight rectangle for a word — tallest letter height times word
+ * length (each letter is 1mm wide).
+ *
+ * Approach: map each letter of the word to its height via its alphabet
+ * index, sort the heights descending and multiply the tallest by the
+ * word length.
+ * Complexity: O(n log n) due to the sort
+ */
+
 'use strict';
 
 const fs = require('fs');

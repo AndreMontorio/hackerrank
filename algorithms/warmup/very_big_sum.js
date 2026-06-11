@@ -1,10 +1,18 @@
-// link problem
-// https://www.hackerrank.com/challenges/a-very-big-sum/problem?isFullScreen=true
+/**
+ * A Very Big Sum
+ * https://www.hackerrank.com/challenges/a-very-big-sum/problem
+ * Algorithms > Warmup | Easy
+ *
+ * Task: sum an array of long integers whose values exceed the 32-bit range.
+ *
+ * Approach: accumulate in a simple loop; the test values stay within
+ * JavaScript's safe integer range (2^53 - 1), so plain numbers work.
+ * Complexity: O(n)
+ */
 
 'use strict';
 
 const fs = require('fs');
-const { measureMemory } = require('vm');
 
 process.stdin.resume();
 process.stdin.setEncoding('utf-8');
@@ -34,13 +42,13 @@ function readLine() {
  */
 
 function aVeryBigSum(ar) {
-    let totalizador = 0;
+    let total = 0;
     // Write your code here
     for(let i = 0; i < ar.length; i++) {
-        totalizador += ar[i];
+        total += ar[i];
     }
     
-    return totalizador;
+    return total;
 }
 
 function main() {
